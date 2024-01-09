@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+}
+
+.btnsWrapper {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  border-radius: 8px;
+  border: 1px dashed #d9e2e5;
+  background: #f9f9f9;
+}
+
+.innerBtn {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
