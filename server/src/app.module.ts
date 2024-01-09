@@ -8,10 +8,13 @@ import { MongooseModule } from '@nestjs/mongoose';
     ConfigModule.forRoot({
       envFilePath: '.env',
     }),
-    MongooseModule.forRoot(process.env.DB_URL),
+    MongooseModule.forRoot(
+      process.env.DB_URL ||
+        'mongodb+srv://admin:rTeXrs48CD1U9ZDM@todo.m9njbns.mongodb.net/?retryWrites=true&w=majority',
+    ),
     TodoModule,
   ],
   controllers: [],
   providers: [],
 })
-export class AppModule { }
+export class AppModule {}
